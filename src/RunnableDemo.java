@@ -204,11 +204,7 @@ public class RunnableDemo implements Runnable {
         if(threadNo==0)
         {
             int arrayNo = problem.problemNo * problem.MAX_SAME_Problem + problem.sameProbIt;
-//            System.out.println("simTimeArray" + arrayNo + " = " + this.getSimTimeArray());
-//            System.out.println("iterSol" + arrayNo + " = "  + this.getIterSol());
-//            System.out.println("runTimeArray" + arrayNo + " = " + this.getRunTimeArray());
 
-            //                t.join();
             int same_it = problem.sameProbIt + 1;
             try {
                 if(same_it < problem.MAX_SAME_Problem)
