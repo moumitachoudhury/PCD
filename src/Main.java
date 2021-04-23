@@ -12,9 +12,9 @@ public class Main {
 
         for (Edge e : edgelist) {
             double x = 0.6418937344000017;
-            ;
+
             double y = 0.6418937344000017;
-            ;
+
             Constraint cons = constraints.get(e);
             int a = cons.getA();
             int b = cons.getB();
