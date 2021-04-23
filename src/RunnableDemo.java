@@ -134,8 +134,8 @@ public class RunnableDemo implements Runnable {
             while (this.agent.getCurrentIter() < this.agent.getMaxIteration())
             {
                 this.agent.getMailManager()[0].startNewIter();
-                double wmax = 0.3;
-                double wmin = 0.1;
+                double wmax = 1.4;
+                double wmin = 0.4;
 
                 double decreasingW = wmax - (wmax - wmin) * ((double)this.agent.getCurrentIter() / this.agent.getMaxIteration());
 
@@ -148,7 +148,6 @@ public class RunnableDemo implements Runnable {
 
                 else {
                     this.agent.updateValues();
-//                      this.agent.updateValues_example_trace();
                 }
 
                 this.agent.sendValueMessage();
